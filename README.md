@@ -1,4 +1,4 @@
-# A Serverless To-do Endpoint App Built Using AWA Lambda and DynamoDB
+# A Serverless To-do Endpoint App Built Using AWS Lambda and DynamoDB
 
 [![CircleCI](https://circleci.com/gh/scriptstar/todo-serverless.svg?style=svg)](https://circleci.com/gh/scriptstar/todo-serverless)
 
@@ -21,13 +21,21 @@ npm install
 4. **Setting up CircleCI**
    https://serverless.com/blog/ci-cd-workflow-serverless-apps-with-circleci/
 
-5. **Deploy a Service:**
+5. a) **Make changes and push the repository**
+
+Circle CI will build the project and deploy automatically
+
+or
+
+5. b) **Deploy the Service manually:**
 
 Use this when you have made changes to your Functions, Events or Resources in `serverless.yml` or you simply want to deploy all changes within your Service at the same time.
 
 ```bash
 serverless deploy -v
 ```
+
+## My Notes:
 
 getTodos
 
