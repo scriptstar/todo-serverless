@@ -1,10 +1,40 @@
+# A Serverless To-do Endpoint App Built Using AWA Lambda and DynamoDB
+
 [![CircleCI](https://circleci.com/gh/scriptstar/todo-serverless.svg?style=svg)](https://circleci.com/gh/scriptstar/todo-serverless)
 
-#
+1. **Install via npm:**
+
+```bash
+npm install -g serverless
+```
+
+2. **Set-up your [Provider Credentials](./docs/providers/aws/guide/credentials.md)**. [Watch the video on setting up credentials](https://www.youtube.com/watch?v=HSd9uYj2LJA)
+
+3. **Clone the Project**
+
+```bash
+git clone https://github.com/scriptstar/todo-serverless
+cd todo-serverless
+npm install
+```
+
+4. **Setting up CircleCI**
+   https://serverless.com/blog/ci-cd-workflow-serverless-apps-with-circleci/
+
+5. **Deploy a Service:**
+
+Use this when you have made changes to your Functions, Events or Resources in `serverless.yml` or you simply want to deploy all changes within your Service at the same time.
+
+```bash
+serverless deploy -v
+```
 
 getTodos
+
 createTodo
+
 updateTodo
+
 destroyTodo
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.html
